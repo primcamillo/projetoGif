@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=s, initial-scale=1.0" />
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <link href="style.css" rel="stylesheet" />
+
+    <title>PodProcurarGifs</title>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow fixed-top">
+        <div class="container">
+            <a class="navbar-brand font-weight-bold" href="#">PodProcurarGifs</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="masthead">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-12 text-center">
+
+                    <h1 class="font-helvetica-bold text-white">Como está seu humor hoje</h1>
+                    <p class="lead text-white"> Se expresse através de Gifs </p>
+                    <!--imagem-->
+
+                    <div class="row">
+                        <div class="col-sm"></div>
+                        <div class="col-sm">
+                            <button type="button" class="btn btn-light btn-block" id="btn-start">Vamos procurar</button>
+                        </div>
+                        <div class="col-sm"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <section class="py base-genrer">
+        <div class="container">
+            <!-- centraliza a letra-->
+            <div class="col-12 text-center">
+                <h1 class="font-helvetica-bold text-white">Gifs</h1>
+
+                <div class="formulario">
+
+                    <div class="div-campos">
+                        <form class="campos-form">
+                            <input id="campo-busca" class="campo-busca" type="text" name="gif"
+                                placeholder="procure o gif">
+                            <input id="btn-busca" class="btn-busca" type="submit" name="" value="enviar">
+                        </form> 
+                    </div>
+                </div>
+
+                <div id="exibe-busca"></div>
+
+                <script type="text/javascript" src="script.js"></script>
+
+
+    </section>
+
+    <section class="py base-time">
+        <div class="container">
+            <div class="col-12 text-center">
+                <h1 class="font-weight-bold text-white">Sobre</h1>
+                <p class="lead text-white">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus
+                    ab nulla dolorum autem nisi officiis blanditiis voluptatem hic,
+                    assumenda aspernatur facere ipsam nemo ratione cumque magnam enim
+                    fugiat reprehenderit expedita.
+                </p>
+            </div>
+
+    </section>
+
+    <section class="py base-result_podcasts">
+        <div class="container">
+            <div class="col-12 text-center">
+                <h1 class="font-weight-bold text-white">Contato</h1>
+                <p class="lead text-white">
+                    Quer ajudar a melhorar o site? Entre em contato conosco.
+                </p>
+            </div>
+            <form class="col-12 text-center">
+                <div class="form-group">
+                    <label for="">Nome completo:</label>
+                    <input type="text" name="nome" class="form-control col-4 text-center" placeholder="Digite seu nome">
+                </div>
+                <div class="form-group">
+                    <label for="">E-mail:</label>
+                    <input type="email" name="email" class="form-control col-4 text-center"
+                        placeholder="Digite seu e-mail">
+                </div>
+                <div class="form-group">
+                    <label for="">Mensagem:</label>
+                    <input name="mensagem" id="botao-enviar" cols="47" rows="20" class="form-control col-4 text-center"
+                        placeholder="Escreva sua mensagem aqui"></input>
+                </div>
+                <button type="submit" class="btn btn-secondary" id="botao-enviar">Enviar</button>
+
+            </form>
+
+        </div>
+        </div>
+    </section>
+
+
+
+    <footer class="rodape">
+        <div class="rodape__principal">
+            <ul class="rodape__navegacao"></ul>
+
+            <div class="rodape__cc">
+                <p> Projeto Reprograma Back-end 2019 | Feito com amor</p>
+            </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
